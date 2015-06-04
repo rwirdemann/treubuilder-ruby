@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @trustee.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @trustee.email %>
+</p>
+
+<%= link_to 'Edit', edit_trustee_path(@trustee) %> |
+<%= link_to 'Back', trustees_path %>
