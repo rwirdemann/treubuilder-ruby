@@ -1,4 +1,4 @@
-#### Einen neuen Treuhänder 
+#### Treuhänder anlegen
 <pre><code>
 curl --header "Content-type: application/json" \
      --request POST \
@@ -6,5 +6,7 @@ curl --header "Content-type: application/json" \
      http://localhost:3000/trustees.json
 </code></pre>
 
-#### Alle Treuhänder als JSON abfragen
+#### Alle Treuhänder als JSON
+<pre><code>
 curl --header "Accept: application/json" http://localhost:3000/trustees
+</code></pre>
