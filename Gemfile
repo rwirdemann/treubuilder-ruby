@@ -44,4 +44,10 @@ group :development, :test do
 end
 
 gem 'capistrano', '~> 3.4.0'
+gem 'capistrano-bundler' 
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
+gem 'capistrano-rbenv'
+gem 'capistrano-chruby'
+gem 'capistrano-passenger'
 
