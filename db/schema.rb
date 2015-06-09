@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20150604162106) do
 
   create_table "account_systems", force: :cascade do |t|
     t.integer  "trustee_id"
+    t.string   "iban"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
