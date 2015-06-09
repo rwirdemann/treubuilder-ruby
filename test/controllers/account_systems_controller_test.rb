@@ -6,7 +6,7 @@ class AccountSystemsControllerTest < ActionController::TestCase
   end
 
   test "should create account system" do
-    assert_difference('Trustee.count') do
+    assert_difference('AccountSystem.count') do
       post :create, account_system: { iban: ' DE12500105170648489890' }, trustee_id: @capera.id
     end
   end
