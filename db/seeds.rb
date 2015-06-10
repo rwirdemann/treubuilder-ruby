@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+capera = Trustee.create(name: 'Capera', email: 'ralf@capera.de')
+account_system = AccountSystem.create(iban: 'DE12500105170648489890', trustee_id: capera.id)

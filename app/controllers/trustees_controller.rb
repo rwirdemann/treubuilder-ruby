@@ -5,7 +5,11 @@ class TrusteesController < ApplicationController
   # GET /trustees
   # GET /trustees.json
   def index
-    @trustees = Trustee.all
+    @trustees = Trustee.includes(:account_systems).all
+    respond_to do |format|
+      format.html { render :index }
+      format.json { render json: @trustees.to_json(:include => :account_systems) }
+    end
   end
 
   # GET /trustees/1
